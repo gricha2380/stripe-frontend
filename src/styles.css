@@ -1,0 +1,384 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.StripeElement {
+  margin: 15px auto;
+  padding: 10px 12px;
+  color: #32325d;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.product {
+  width: 100%;
+  max-width: 450px;
+  margin: 0rem 0 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product img {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+  width: inherit;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.btn-pay {
+  display: block;
+  width: 100%;
+  border: none;
+  background: linear-gradient(135deg, #31003e 0%, #c3286e 100%);
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.product-info {
+  padding: 0 16px;
+}
+
+h3.product-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+h4.product-price {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: #777;
+  font-weight: 500;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-purple {
+  background-color: #635bff;
+  color: #fff;
+}
+
+.btn-purple:hover {
+  background-color: #554ddf;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+.button {
+  border-radius: 0.5rem;
+}
+
+.db-RegisterAndLoginBackground-background {
+  z-index: 0;
+  position: fixed;
+  top: -170px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: skewY(-12deg);
+}
+
+.db-RegisterAndLoginBackground-grayBackground {
+  transform-origin: 0%;
+  height: 1698px;
+  background-color: var(--sail-gray50);
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  right: 0;
+}
+
+.db-RegisterAndLoginBackground-verticalLine--first {
+  left: calc(50% - 540px);
+}
+
+.db-RegisterAndLoginBackground-verticalLine--fifth, .db-RegisterAndLoginBackground-verticalLine--first {
+  background: #eceef4;
+}
+
+.db-RegisterAndLoginBackground-verticalLine {
+  width: 0px;
+  background-image: linear-gradient(#eceef4 49%, #eceef400 50%);
+  background-size: 1px 8px;
+  position: absolute;
+  top: -100vh;
+  bottom: -100vh;
+  right: auto;
+}
+
+.db-RegisterAndLoginBackground-verticalLine--second {
+  left: calc(50% - 270px);
+}
+
+.db-RegisterAndLoginBackground-verticalLine {
+  width: 0px;
+  background-image: linear-gradient(#eceef4 49%, #eceef400 50%);
+  background-size: 1px 8px;
+  position: absolute;
+  top: -100vh;
+  bottom: -100vh;
+  right: auto;
+}
+
+.db-RegisterAndLoginBackground-firstLeftStripe {
+  height: 40px;
+  top: 668px;
+  left: calc(50% - 700px);
+  right: calc(50% + 540px);
+}
+
+.db-RegisterAndLoginBackground-secondLeftStripe {
+  background: #7a73ff;
+  height: 40px;
+  top: 698px;
+  left: -10px;
+  right: calc(50% + 405px);
+}
+
+.db-RegisterAndLoginBackground-firstLeftStripe {
+  background: #80e9ff;
+}
+
+.db-RegisterAndLoginBackground-firstAndSecondLeftStripeBlend {
+  background: #0048e5;
+}
+
+.db-RegisterAndLoginBackground-firstRightStripe {
+  background: #7a73ff;
+}
+
+.db-RegisterAndLoginBackground-firstAndSecondLeftStripeBlend, .db-RegisterAndLoginBackground-firstLeftStripe, .db-RegisterAndLoginBackground-firstRightStripe, .db-RegisterAndLoginBackground-secondLeftStripe {
+  position: absolute;
+}
+
+.db-RegisterAndLoginBackground-grayBackground {
+  transform-origin: 0%;
+  height: 1698px;
+  background-color: #f7fafc;
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  right: 0;
+}
+
+.tooltip:hover {
+  cursor: pointer;
+}
+
+.tooltip::before {
+  color: white;
+  background-color: rgba(108, 108, 108, 0.9);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+  text-shadow: 1px 1px 1px solid;
+}
+
+.tooltip::after {
+  border-color: rgba(108, 108, 108, 0.9) transparent transparent transparent;
+}
+
+.tooltip-bottom::after {
+  border-color: transparent transparent rgba(108, 108, 108, 0.9) transparent;
+  margin-top: -1rem;
+}
+
+.tooltip-bottom::before {
+  margin-top: -1rem;
+}
+
+.tooltip-right::after {
+  border-color: transparent rgba(108, 108, 108, 0.9) transparent transparent;
+  margin-left: 0rem;
+}
+
+.tooltip-right::before {
+  margin-left: 0rem;
+}
+
+.tooltip.info {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 0.25rem;
+  border-radius: 1rem;
+  width: 1.5rem;
+  display: inline-block;
+  height: 1.5rem;
+  vertical-align: revert;
+  padding-top: 0.2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  white-space: pre-wrap;
+}
+
+.skill-grid {
+  padding: 2rem 1rem 0;
+  border-top: 1px solid #babbbd;
+  margin-top: 1.5rem;
+  width: 500px;
+}
+
+.skill-grid .tooltip {
+  margin: initial;
+  width: 50px;
+}
+
+.technologies {
+  font-size: .9rem;
+}
+
+.technologies span.font-semibold {
+  padding: .9rem 0 0rem;
+  display: inline-block;
+}
+
+.technologies span.font-semibold:first-of-type {
+  padding-top: 0;
+}
+
+.feature-grid h2 {
+  margin: 0.5rem 0 -0.5rem;
+}
+
+.frosty {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+ul.checklist ::marker {
+  font-size: 2rem;
+}
+
+ul.checklist li {
+  list-style-image: url("/src/check.svg");
+}
+
+.stripe-logo {
+  background-image: url("/src/stripe.svg");
+  height: 2rem;
+  width: 4rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-left: -0.42rem;
+  margin-right: -0.42rem;
+}
+
+.discription {
+  margin-top: -0.5rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon.linkedin {
+  background-image: url("/src/linkedin.svg");
+}
+
+.icon.email {
+  background-image: url("/src/email.svg");
+}
+
+.icon.resume {
+  background-image: url("/src/resume.svg");
+}
+
+footer {
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #d1d1d1;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+footer .button {
+  padding: 20px;
+  background: #B2B2B2;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  width: 200px;
+  transition: .2s;
+}
+
+footer .button:hover {
+  background: #7D7D7D;
+}
+
+.social-list a {
+  display: inline-block;
+  padding: 15px;
+  margin: 0px;
+  font-size: 18px;
+  color: #212121;
+  opacity: .5;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.copyright {
+  font-family: arial, sans-serif;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+
+footer {
+  padding: 4rem 2rem 2rem;
+  font-size: 1.1rem;
+  z-index: 99999;
+  position: relative;
+  background: #f8fafc;
+}
+
+footer .container-footer {
+  width: 50rem;
+  margin: auto;
+}
+
+footer .button {
+  display: block;
+  margin: 1rem auto;
+}
+
+footer .sig {
+  background: url("/src/sig.png");
+  height: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  width: 155px;
+}
+
+footer p {
+  margin-bottom: 1.5rem;
+}
