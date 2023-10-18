@@ -9,16 +9,6 @@ const handleSubmit = async event => {
   console.log('loading status', loading)
   loading = true;
   console.log('loading status should change', loading)
-  // this.setState({error: null});
-  // this.setState({setLoading: true});
-  
-  // let data = { email: this.state.user.email }
-  // console.log('data', data)
-  // if (this.state.user.email <= 0) {
-  //   this.setState({error:"Please provide an email address."});
-  //   this.setState({setLoading: false});
-  // } else {
-
     fetch(API_URL, {
       method: "POST",
       mode: 'cors',
@@ -63,7 +53,6 @@ const ProductDisplay = () => (
       />
     </div>
       <div className="description">
-      {/* <h3>Gregor Richardson - Solutions Architect</h3> */}
       </div>
     </div>
     <div  className="button btn btn-purple" onClick={(e) => {handleSubmit(e) }} disabled={false}>
@@ -95,7 +84,7 @@ export default function CheckoutWidget() {
 
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
-    console.log('checking url query')
+    // console.log('checking url query')
     const query = new URLSearchParams(window.location.search);
 
     if (query.get("success")) {
